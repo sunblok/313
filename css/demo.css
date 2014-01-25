@@ -6,13 +6,29 @@
    margin:100px;
    border-radius: 15px;
 }
-
-.shaded:hover
+.Link:hover
 {
-   background-color:#FFCC00;
+   background-color:#FF0000;
 }
-
-.div78
+.divGeorge
 {
    box-shadow:5px 5px 10px #000000;
+   background-color : red;
+}
+.wrapper
+{
+    position:absolute;
+    top: 110px;
+    left: -400px;
+    width:800px;
+    background-color : red;
+}
+
+.hidden
+{
+   display:none;
+}
+.up
+{
+    background-color : green;
 }

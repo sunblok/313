@@ -1,0 +1,1 @@
+Computer Science:2;Web Development and Design:6;Computer Information Technology:3;Computer Engineering:4;Pokeball:7;Lightsaber:3;Phaser:4;Tardis:2;North America:2;South America:2;Europe:4;Asia:4;Australia:3;Africa:4;Antartica:11;Dog:4;Cat:6;Bird:7;Fish:8;Sibling:13;

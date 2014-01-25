@@ -1,0 +1,26 @@
+<?php
+      
+      echo $_COOKIE[$key];
+      echo $_SESSION["user"];
+      $count = 0;
+      
+      //r = reads r+ = read write
+      //r+ needs to have write permissions on the server
+      $infile = fopen("form.php","r");
+      //Only gets a string
+      $line = fgets($infile);
+      
+       // while (!feof($infile))
+      // {
+         // $count= $count+1;
+      // } 
+      fclose($infile);
+      //reads in the whole file in one string
+      $content = file_get_contents("form.php");
+      
+      //Reads in each line into an array
+      $content2 = file("form.php");
+      
+      //print "$count";
+      
+      ?>
