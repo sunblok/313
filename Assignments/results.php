@@ -43,6 +43,7 @@
                   //This only happens if the session was posted
                   if($_POST and $_SESSION["Submitted"] == "FALSE")
                   {
+                     //echo "here";
                      foreach($_POST as $val)
                      {
                         if($val == $name)
@@ -81,6 +82,7 @@
                if ($_POST and $_SESSION["Submitted"] == "FALSE")
                {
                   $_SESSION["Submitted"] = "TRUE";
+                  //echo "testsed";
                }
             }
          

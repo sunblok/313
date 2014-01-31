@@ -95,6 +95,7 @@
       
       <input type="submit" value = "Submit">
    </form>
+   <br/>
    <form method = "LINK" Action = "results.php">
       <input type="submit" value = "See Results">
    </form>
