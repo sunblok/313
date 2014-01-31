@@ -47,6 +47,25 @@ INSERT INTO publisher
 VALUES
 ('Mccalls', UTC_DATE());
 
+-- Conditionally drop objects.
+SELECT 'pType' AS "Drop Table";
+DROP TABLE IF EXISTS pType;
+
+SELECT 'pType' AS "Create Table";
+CREATE TABLE pType
+( pType_id           INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
+, pType_name         CHAR(5)     NOT NULL
+, pType_date_created DATE        NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Insert into pType
+SELECT 'pType' AS "Insert Into";
+INSERT INTO pType
+( pType_name
+, pType_date_created)
+VALUES
+('Dress', UTC_DATE());
+
 
 -- Conditionally drop objects.
 SELECT 'pSize' AS "Drop Table";
@@ -59,36 +78,36 @@ CREATE TABLE pSize
 , pSize_date_created DATE        NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Insert into owner
+-- Insert into pSize
 SELECT 'pSize' AS "Insert Into";
 
 INSERT INTO pSize
-( publisher_name
-, publisher_date_created)
+( pSize_size
+, pSize_date_created)
 VALUES
 ('XS', UTC_DATE());
 
 INSERT INTO pSize
-( publisher_name
-, publisher_date_created)
+( pSize_size
+, pSize_date_created)
 VALUES
 ('S', UTC_DATE());
 
 INSERT INTO pSize
-( publisher_name
-, publisher_date_created)
+( pSize_size
+, pSize_date_created)
 VALUES
 ('M', UTC_DATE());
 
 INSERT INTO pSize
-( publisher_name
-, publisher_date_created)
+( pSize_size
+, pSize_date_created)
 VALUES
 ('L', UTC_DATE());
 
 INSERT INTO pSize
-( publisher_name
-, publisher_date_created)
+( pSize_size
+, pSize_date_created)
 VALUES
 ('XL', UTC_DATE());
 
@@ -109,7 +128,7 @@ CREATE TABLE pattern
 , CONSTRAINT pattern_fk1 FOREIGN KEY (pattern_publisher) REFERENCES publisher (publisher_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO owner
+INSERT INTO pattern
 ( pattern_name
 , pattern_number
 , pattern_dateAdded
@@ -117,7 +136,11 @@ INSERT INTO owner
 , pattern_publisher
 , pattern_date_created)
 VALUES
-('Misses\'\/Miss Petite Dress','6698MCC',UTC_DATE());
+('Misses\'\/Miss Petite Dress','6698MCC','Database/Pictures/mcc6698.jpg'
+, (SELECT publisher_id
+   FROM publisher
+   WHERE publisher_name - 'Mccalls')
+,UTC_DATE());
 
 
 -- Conditionally drop objects.
