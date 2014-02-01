@@ -16,6 +16,7 @@ CREATE TABLE owner
 , owner_email           INT UNSIGNED   NOT NULL
 , owner_date_created    DATE           NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+SHOW WARNINGS;
 
 -- Insert into owner
 SELECT 'owner' AS "Insert Into";
@@ -25,7 +26,7 @@ INSERT INTO owner
 , owner_date_created)
 VALUES
 ('LaVona Comsa','daMom@gmail.com',UTC_DATE());
-
+SHOW WARNINGS;
 
 -- Conditionally drop objects.
 SELECT 'publisher' AS "Drop Table";
@@ -37,7 +38,7 @@ CREATE TABLE publisher
 , publisher_name         CHAR(70)     NOT NULL
 , publisher_date_created DATE         NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+SHOW WARNINGS;
 
 -- Insert into owner
 SELECT 'publisher' AS "Insert Into";
@@ -46,6 +47,7 @@ INSERT INTO publisher
 , publisher_date_created)
 VALUES
 ('Mccalls', UTC_DATE());
+SHOW WARNINGS;
 
 -- Conditionally drop objects.
 SELECT 'pType' AS "Drop Table";
@@ -57,6 +59,7 @@ CREATE TABLE pType
 , pType_name         CHAR(5)     NOT NULL
 , pType_date_created DATE        NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+SHOW WARNINGS;
 
 -- Insert into pType
 SELECT 'pType' AS "Insert Into";
@@ -65,6 +68,7 @@ INSERT INTO pType
 , pType_date_created)
 VALUES
 ('Dress', UTC_DATE());
+SHOW WARNINGS;
 
 
 -- Conditionally drop objects.
@@ -77,6 +81,7 @@ CREATE TABLE pSize
 , pSize_size         CHAR(5)     NOT NULL
 , pSize_date_created DATE        NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+SHOW WARNINGS;
 
 -- Insert into pSize
 SELECT 'pSize' AS "Insert Into";
@@ -86,30 +91,35 @@ INSERT INTO pSize
 , pSize_date_created)
 VALUES
 ('XS', UTC_DATE());
+SHOW WARNINGS;
 
 INSERT INTO pSize
 ( pSize_size
 , pSize_date_created)
 VALUES
 ('S', UTC_DATE());
+SHOW WARNINGS;
 
 INSERT INTO pSize
 ( pSize_size
 , pSize_date_created)
 VALUES
 ('M', UTC_DATE());
+SHOW WARNINGS;
 
 INSERT INTO pSize
 ( pSize_size
 , pSize_date_created)
 VALUES
-('L', UTC_DATE());
+('SHOW WARNINGS;
+L', UTC_DATE());
 
 INSERT INTO pSize
 ( pSize_size
 , pSize_date_created)
 VALUES
 ('XL', UTC_DATE());
+SHOW WARNINGS;
 
 -- Conditionally drop objects.
 SELECT 'pattern' AS "Drop Table";
@@ -127,7 +137,10 @@ CREATE TABLE pattern
 , KEY pattern_fk1 (pattern_publisher)
 , CONSTRAINT pattern_fk1 FOREIGN KEY (pattern_publisher) REFERENCES publisher (publisher_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+SHOW WARNINGS;
 
+-- Insert into pattern
+SELECT 'pattern' AS "Insert Into";
 INSERT INTO pattern
 ( pattern_name
 , pattern_number
@@ -136,27 +149,47 @@ INSERT INTO pattern
 , pattern_publisher
 , pattern_date_created)
 VALUES
-('Misses\'\/Miss Petite Dress','6698MCC','Database/Pictures/mcc6698.jpg'
+('Misses/Miss Petite Dress'
+, '6698MCC'
+, UTC_DATE()
+, 'Database/Pictures/mcc6698.jpg'
 , (SELECT publisher_id
    FROM publisher
-   WHERE publisher_name - 'Mccalls')
+   WHERE publisher_name = 'Mccalls')
 ,UTC_DATE());
+SHOW WARNINGS;
 
 
 -- Conditionally drop objects.
-SELECT 'pattern_Type' AS "Drop Table";
-DROP TABLE IF EXISTS pattern_Type;
+SELECT 'type_Pattern' AS "Drop Table";
+DROP TABLE IF EXISTS type_Pattern;
 
 SELECT 'type_Pattern' AS "Create Table";
 CREATE TABLE type_Pattern
 ( type_Pattern_id           INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
 , type_Pattern_pType         INT UNSIGNED     NOT NULL
 , type_Pattern_pattern      INT UNSIGNED     NOT NULL
-, KEY type_Pattern_fk1 (pattern_Type_pType)
+, KEY type_Pattern_fk1 (type_Pattern_pType)
 , CONSTRAINT type_Pattern_fk1 FOREIGN KEY (type_Pattern_pType) REFERENCES pType (pType_id)
 , KEY type_Pattern_fk2 (type_Pattern_pattern)
 , CONSTRAINT type_Pattern_fk2 FOREIGN KEY (type_Pattern_pattern) REFERENCES pattern (pattern_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+SHOW WARNINGS;
+
+-- Insert into type_Pattern
+SELECT 'type_Pattern' AS "Insert Into";
+INSERT INTO type_Pattern
+( type_Pattern_pType
+, type_Pattern_pattern)
+VALUES
+((SELECT pType_id
+   FROM pType
+   WHERE pType_name = 'Dress')
+, (SELECT pattern_id
+   FROM pattern
+   WHERE pattern_number = '6698MCC')
+);
+SHOW WARNINGS;
 
 
 -- Conditionally drop objects.
@@ -173,6 +206,22 @@ CREATE TABLE size_Pattern
 , KEY size_Pattern_fk2 (size_Pattern_pattern)
 , CONSTRAINT size_Pattern_fk2 FOREIGN KEY (size_Pattern_pattern) REFERENCES pattern (pattern_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+SHOW WARNINGS;
+
+-- Insert into size_Pattern
+SELECT 'size_Pattern' AS "Insert Into";
+INSERT INTO size_Pattern
+( size_Pattern_pSize
+, size_Pattern_pattern)
+VALUES
+((SELECT pSize_id
+   FROM pSize
+   WHERE pSize_size = 'M')
+, (SELECT pattern_id
+   FROM pattern
+   WHERE pattern_number = '6698MCC')
+);
+SHOW WARNINGS;
 
 
 
@@ -180,14 +229,45 @@ CREATE TABLE size_Pattern
 SELECT 'owner_Pattern' AS "Drop Table";
 DROP TABLE IF EXISTS owner_Pattern;
 
+-- Creates owner_Pattern table.
 SELECT 'owner_Pattern' AS "Create Table";
 CREATE TABLE owner_Pattern
 ( owner_Pattern_id           INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
-, owner_Pattern_pSize        INT UNSIGNED     NOT NULL
+, owner_Pattern_owner        INT UNSIGNED     NOT NULL
 , owner_Pattern_pattern      INT UNSIGNED     NOT NULL
-, KEY owner_Pattern_fk1 (owner_Pattern_pSize)
-, CONSTRAINT owner_Pattern_fk1 FOREIGN KEY (owner_Pattern_pSize) REFERENCES owner (owner_id)
+, KEY owner_Pattern_fk1 (owner_Pattern_owner)
+, CONSTRAINT owner_Pattern_fk1 FOREIGN KEY (owner_Pattern_owner) REFERENCES owner (owner_id)
 , KEY owner_Pattern_fk2 (owner_Pattern_pattern)
 , CONSTRAINT owner_Pattern_fk2 FOREIGN KEY (owner_Pattern_pattern) REFERENCES pattern (pattern_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+SHOW WARNINGS;
 
+-- Insert into owner_Pattern
+SELECT 'owner_Pattern' AS "Insert Into";
+INSERT INTO owner_Pattern
+( owner_Pattern_owner
+, owner_Pattern_pattern)
+VALUES
+((SELECT owner_id
+   FROM owner
+   WHERE owner_name = 'LaVona Comsa')
+, (SELECT pattern_id
+   FROM pattern
+   WHERE pattern_number = '6698MCC')
+);
+SHOW WARNINGS;
+
+
+SELECT 'Foreign_KEY_CHECKS = 1' as 'SET';
+SET FOREIGN_KEY_CHECKS = 1;
+
+SELECT 'Commit' as 'Commit';
+-- Commit inserts.
+COMMIT;
+
+SELECT 'Show Tables' as 'Select';
+-- Display tables.
+SHOW TABLES;
+
+-- Close log file.
+NOTEE
