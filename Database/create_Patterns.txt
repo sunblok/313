@@ -8,7 +8,7 @@ Query OK, 0 rows affected (0.00 sec)
 +------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected, 1 warning (0.04 sec)
+Query OK, 0 rows affected (0.01 sec)
 
 +--------------+
 | Create Table |
@@ -19,264 +19,6 @@ Query OK, 0 rows affected, 1 warning (0.04 sec)
 
 Query OK, 0 rows affected (0.05 sec)
 
-+-------------+
-| Insert Into |
-+-------------+
-| owner       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected, 1 warning (0.01 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| publisher  |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| publisher    |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| publisher   |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pType      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pType        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pType       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pSize      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pSize        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pSize       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pattern    |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pattern      |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pattern     |
-+-------------+
-1 row in set (0.00 sec)
-
-ERROR 1136 (21S01): Column count doesn't match value count at row 1
-+--------------+
-| Drop Table   |
-+--------------+
-| pattern_Type |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1072 (42000): Key column 'pattern_Type_pType' doesn't exist in table
-+--------------+
-| Insert Into  |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1146 (42S02): Table 'Patterns.type_Pattern' doesn't exist
-+--------------+
-| Drop Table   |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1054 (42S22): Unknown column 'pattern_numbers' in 'where clause'
-+---------------+
-| Drop Table    |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+---------------+
-| Create Table  |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.01 sec)
-
-ERROR 1072 (42000): Key column 'owner_Pattern_pSize' doesn't exist in table
-+---------------+
-| Insert Into   |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-ERROR 1146 (42S02): Table 'Patterns.owner_Pattern' doesn't exist
-+------------------------+
-| SET                    |
-+------------------------+
-| Foreign_KEY_CHECKS = 1 |
-+------------------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------+
-| Commit |
-+--------+
-| Commit |
-+--------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+-------------+
-| Select      |
-+-------------+
-| Show Tables |
-+-------------+
-1 row in set (0.00 sec)
-
-+--------------------+
-| Tables_in_Patterns |
-+--------------------+
-| owner              |
-| pSize              |
-| pType              |
-| pattern            |
-| publisher          |
-| size_Pattern       |
-+--------------------+
-6 rows in set (0.00 sec)
-
-Database changed
-Query OK, 0 rows affected (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| owner      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| owner        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
 Empty set (0.00 sec)
 
 +-------------+
@@ -295,321 +37,6 @@ Query OK, 1 row affected, 1 warning (0.01 sec)
 +---------+------+------------------------------------------------------------------------------+
 1 row in set (0.00 sec)
 
-+------------+
-| Drop Table |
-+------------+
-| publisher  |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| publisher    |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| publisher   |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pType      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pType        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pType       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pSize      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pSize        |
-+--------------+
-1 row in set (0.01 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.01 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pSize       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected, 1 warning (0.01 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pattern    |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pattern      |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pattern     |
-+-------------+
-1 row in set (0.00 sec)
-
-ERROR 1136 (21S01): Column count doesn't match value count at row 1
-+-------+------+-------------------------------------------------+
-| Level | Code | Message                                         |
-+-------+------+-------------------------------------------------+
-| Error | 1136 | Column count doesn't match value count at row 1 |
-+-------+------+-------------------------------------------------+
-1 row in set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| pattern_Type |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1072 (42000): Key column 'pattern_Type_pType' doesn't exist in table
-+-------+------+--------------------------------------------------------+
-| Level | Code | Message                                                |
-+-------+------+--------------------------------------------------------+
-| Error | 1072 | Key column 'pattern_Type_pType' doesn't exist in table |
-+-------+------+--------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1146 (42S02): Table 'Patterns.type_Pattern' doesn't exist
-+-------+------+---------------------------------------------+
-| Level | Code | Message                                     |
-+-------+------+---------------------------------------------+
-| Error | 1146 | Table 'Patterns.type_Pattern' doesn't exist |
-+-------+------+---------------------------------------------+
-1 row in set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.01 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1054 (42S22): Unknown column 'pattern_numbers' in 'where clause'
-+-------+------+----------------------------------------------------+
-| Level | Code | Message                                            |
-+-------+------+----------------------------------------------------+
-| Error | 1054 | Unknown column 'pattern_numbers' in 'where clause' |
-+-------+------+----------------------------------------------------+
-1 row in set (0.00 sec)
-
-+---------------+
-| Drop Table    |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+---------------+
-| Create Table  |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-ERROR 1072 (42000): Key column 'owner_Pattern_pSize' doesn't exist in table
-+-------+------+---------------------------------------------------------+
-| Level | Code | Message                                                 |
-+-------+------+---------------------------------------------------------+
-| Error | 1072 | Key column 'owner_Pattern_pSize' doesn't exist in table |
-+-------+------+---------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+---------------+
-| Insert Into   |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-ERROR 1146 (42S02): Table 'Patterns.owner_Pattern' doesn't exist
-+-------+------+----------------------------------------------+
-| Level | Code | Message                                      |
-+-------+------+----------------------------------------------+
-| Error | 1146 | Table 'Patterns.owner_Pattern' doesn't exist |
-+-------+------+----------------------------------------------+
-1 row in set (0.00 sec)
-
-+------------------------+
-| SET                    |
-+------------------------+
-| Foreign_KEY_CHECKS = 1 |
-+------------------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------+
-| Commit |
-+--------+
-| Commit |
-+--------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+-------------+
-| Select      |
-+-------------+
-| Show Tables |
-+-------------+
-1 row in set (0.00 sec)
-
-+--------------------+
-| Tables_in_Patterns |
-+--------------------+
-| owner              |
-| pSize              |
-| pType              |
-| pattern            |
-| publisher          |
-| size_Pattern       |
-+--------------------+
-6 rows in set (0.01 sec)
-
-Database changed
-Query OK, 0 rows affected (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| owner      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| owner        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.04 sec)
-
-Empty set (0.00 sec)
-
 +-------------+
 | Insert Into |
 +-------------+
@@ -619,11 +46,11 @@ Empty set (0.00 sec)
 
 Query OK, 1 row affected, 1 warning (0.01 sec)
 
-+---------+------+------------------------------------------------------------------------------+
-| Level   | Code | Message                                                                      |
-+---------+------+------------------------------------------------------------------------------+
-| Warning | 1366 | Incorrect integer value: 'daMom@gmail.com' for column 'owner_email' at row 1 |
-+---------+------+------------------------------------------------------------------------------+
++---------+------+---------------------------------------------------------------------------------+
+| Level   | Code | Message                                                                         |
++---------+------+---------------------------------------------------------------------------------+
+| Warning | 1366 | Incorrect integer value: 'notDaMom@gmail.com' for column 'owner_email' at row 1 |
++---------+------+---------------------------------------------------------------------------------+
 1 row in set (0.00 sec)
 
 +------------+
@@ -642,7 +69,7 @@ Query OK, 0 rows affected (0.01 sec)
 +--------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.02 sec)
+Query OK, 0 rows affected (0.01 sec)
 
 Empty set (0.00 sec)
 
@@ -653,7 +80,95 @@ Empty set (0.00 sec)
 +-------------+
 1 row in set (0.00 sec)
 
-Query OK, 1 row affected (0.02 sec)
+Query OK, 1 row affected (0.00 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
 
 Empty set (0.00 sec)
 
@@ -664,16 +179,16 @@ Empty set (0.00 sec)
 +------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.01 sec)
+Query OK, 0 rows affected (0.00 sec)
 
 +--------------+
 | Create Table |
 +--------------+
 | pType        |
 +--------------+
-1 row in set (0.00 sec)
+1 row in set (0.01 sec)
 
-Query OK, 0 rows affected (0.01 sec)
+Query OK, 0 rows affected (0.06 sec)
 
 Empty set (0.00 sec)
 
@@ -688,295 +203,76 @@ Query OK, 1 row affected (0.03 sec)
 
 Empty set (0.00 sec)
 
-+------------+
-| Drop Table |
-+------------+
-| pSize      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pSize        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.04 sec)
-
-Empty set (0.00 sec)
-
 +-------------+
 | Insert Into |
 +-------------+
-| pSize       |
+| pType       |
 +-------------+
 1 row in set (0.00 sec)
 
 Query OK, 1 row affected (0.00 sec)
 
 Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
 
 Query OK, 1 row affected (0.02 sec)
 
 Empty set (0.00 sec)
 
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
 Query OK, 1 row affected (0.00 sec)
 
 Empty set (0.00 sec)
 
-Query OK, 1 row affected, 1 warning (0.00 sec)
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
 
 Query OK, 1 row affected (0.00 sec)
 
 Empty set (0.00 sec)
 
-+------------+
-| Drop Table |
-+------------+
-| pattern    |
-+------------+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.02 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pattern      |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
+Query OK, 1 row affected (0.02 sec)
 
 Empty set (0.00 sec)
 
 +-------------+
 | Insert Into |
 +-------------+
-| pattern     |
-+-------------+
-1 row in set (0.01 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| pattern_Type |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1072 (42000): Key column 'pattern_Type_pType' doesn't exist in table
-+-------+------+--------------------------------------------------------+
-| Level | Code | Message                                                |
-+-------+------+--------------------------------------------------------+
-| Error | 1072 | Key column 'pattern_Type_pType' doesn't exist in table |
-+-------+------+--------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1146 (42S02): Table 'Patterns.type_Pattern' doesn't exist
-+-------+------+---------------------------------------------+
-| Level | Code | Message                                     |
-+-------+------+---------------------------------------------+
-| Error | 1146 | Table 'Patterns.type_Pattern' doesn't exist |
-+-------+------+---------------------------------------------+
-1 row in set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1054 (42S22): Unknown column 'pattern_numbers' in 'where clause'
-+-------+------+----------------------------------------------------+
-| Level | Code | Message                                            |
-+-------+------+----------------------------------------------------+
-| Error | 1054 | Unknown column 'pattern_numbers' in 'where clause' |
-+-------+------+----------------------------------------------------+
-1 row in set (0.00 sec)
-
-+---------------+
-| Drop Table    |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+---------------+
-| Create Table  |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-ERROR 1072 (42000): Key column 'owner_Pattern_pSize' doesn't exist in table
-+-------+------+---------------------------------------------------------+
-| Level | Code | Message                                                 |
-+-------+------+---------------------------------------------------------+
-| Error | 1072 | Key column 'owner_Pattern_pSize' doesn't exist in table |
-+-------+------+---------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+---------------+
-| Insert Into   |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-ERROR 1146 (42S02): Table 'Patterns.owner_Pattern' doesn't exist
-+-------+------+----------------------------------------------+
-| Level | Code | Message                                      |
-+-------+------+----------------------------------------------+
-| Error | 1146 | Table 'Patterns.owner_Pattern' doesn't exist |
-+-------+------+----------------------------------------------+
-1 row in set (0.00 sec)
-
-+------------------------+
-| SET                    |
-+------------------------+
-| Foreign_KEY_CHECKS = 1 |
-+------------------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------+
-| Commit |
-+--------+
-| Commit |
-+--------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+-------------+
-| Select      |
-+-------------+
-| Show Tables |
-+-------------+
-1 row in set (0.00 sec)
-
-+--------------------+
-| Tables_in_Patterns |
-+--------------------+
-| owner              |
-| pSize              |
-| pType              |
-| pattern            |
-| publisher          |
-| size_Pattern       |
-+--------------------+
-6 rows in set (0.00 sec)
-
-Database changed
-Query OK, 0 rows affected (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| owner      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| owner        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| owner       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected, 1 warning (0.01 sec)
-
-+---------+------+------------------------------------------------------------------------------+
-| Level   | Code | Message                                                                      |
-+---------+------+------------------------------------------------------------------------------+
-| Warning | 1366 | Incorrect integer value: 'daMom@gmail.com' for column 'owner_email' at row 1 |
-+---------+------+------------------------------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| publisher  |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| publisher    |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| publisher   |
+| pType       |
 +-------------+
 1 row in set (0.00 sec)
 
@@ -984,23 +280,179 @@ Query OK, 1 row affected (0.01 sec)
 
 Empty set (0.00 sec)
 
-+------------+
-| Drop Table |
-+------------+
-| pType      |
-+------------+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.01 sec)
+Query OK, 1 row affected (0.01 sec)
 
-+--------------+
-| Create Table |
-+--------------+
-| pType        |
-+--------------+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.03 sec)
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
 
 Empty set (0.00 sec)
 
@@ -1022,7 +474,7 @@ Empty set (0.00 sec)
 +------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.01 sec)
+Query OK, 0 rows affected (0.00 sec)
 
 +--------------+
 | Create Table |
@@ -1031,7 +483,7 @@ Query OK, 0 rows affected (0.01 sec)
 +--------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.02 sec)
+Query OK, 0 rows affected (0.03 sec)
 
 Empty set (0.00 sec)
 
@@ -1046,7 +498,7 @@ Query OK, 1 row affected (0.01 sec)
 
 Empty set (0.00 sec)
 
-Query OK, 1 row affected (0.01 sec)
+Query OK, 1 row affected (0.00 sec)
 
 Empty set (0.00 sec)
 
@@ -1054,7 +506,9 @@ Query OK, 1 row affected (0.01 sec)
 
 Empty set (0.00 sec)
 
-Query OK, 1 row affected, 1 warning (0.01 sec)
+Query OK, 1 row affected (0.00 sec)
+
+Empty set (0.00 sec)
 
 Query OK, 1 row affected (0.01 sec)
 
@@ -1076,7 +530,7 @@ Query OK, 0 rows affected (0.00 sec)
 +--------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.03 sec)
+Query OK, 0 rows affected (0.01 sec)
 
 Empty set (0.00 sec)
 
@@ -1094,11 +548,11 @@ Empty set (0.00 sec)
 +--------------+
 | Drop Table   |
 +--------------+
-| pattern_Type |
+| type_Pattern |
 +--------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected, 1 warning (0.00 sec)
+Query OK, 0 rows affected (0.01 sec)
 
 +--------------+
 | Create Table |
@@ -1107,7 +561,7 @@ Query OK, 0 rows affected, 1 warning (0.00 sec)
 +--------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.03 sec)
+Query OK, 0 rows affected (0.04 sec)
 
 Empty set (0.00 sec)
 
@@ -1118,13 +572,9 @@ Empty set (0.00 sec)
 +--------------+
 1 row in set (0.00 sec)
 
-ERROR 1054 (42S22): Unknown column 'pattern_numbers' in 'where clause'
-+-------+------+----------------------------------------------------+
-| Level | Code | Message                                            |
-+-------+------+----------------------------------------------------+
-| Error | 1054 | Unknown column 'pattern_numbers' in 'where clause' |
-+-------+------+----------------------------------------------------+
-1 row in set (0.00 sec)
+Query OK, 1 row affected (0.01 sec)
+
+Empty set (0.00 sec)
 
 +--------------+
 | Drop Table   |
@@ -1133,7 +583,7 @@ ERROR 1054 (42S22): Unknown column 'pattern_numbers' in 'where clause'
 +--------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.00 sec)
+Query OK, 0 rows affected (0.01 sec)
 
 +--------------+
 | Create Table |
@@ -1142,7 +592,7 @@ Query OK, 0 rows affected (0.00 sec)
 +--------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.02 sec)
+Query OK, 0 rows affected (0.05 sec)
 
 Empty set (0.00 sec)
 
@@ -1151,965 +601,12 @@ Empty set (0.00 sec)
 +--------------+
 | size_Pattern |
 +--------------+
-1 row in set (0.00 sec)
-
-ERROR 1054 (42S22): Unknown column 'pattern_numbers' in 'where clause'
-+-------+------+----------------------------------------------------+
-| Level | Code | Message                                            |
-+-------+------+----------------------------------------------------+
-| Error | 1054 | Unknown column 'pattern_numbers' in 'where clause' |
-+-------+------+----------------------------------------------------+
-1 row in set (0.00 sec)
-
-+---------------+
-| Drop Table    |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.01 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+---------------+
-| Create Table  |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-ERROR 1072 (42000): Key column 'owner_Pattern_pSize' doesn't exist in table
-+-------+------+---------------------------------------------------------+
-| Level | Code | Message                                                 |
-+-------+------+---------------------------------------------------------+
-| Error | 1072 | Key column 'owner_Pattern_pSize' doesn't exist in table |
-+-------+------+---------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+---------------+
-| Insert Into   |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-ERROR 1146 (42S02): Table 'Patterns.owner_Pattern' doesn't exist
-+-------+------+----------------------------------------------+
-| Level | Code | Message                                      |
-+-------+------+----------------------------------------------+
-| Error | 1146 | Table 'Patterns.owner_Pattern' doesn't exist |
-+-------+------+----------------------------------------------+
-1 row in set (0.00 sec)
-
-+------------------------+
-| SET                    |
-+------------------------+
-| Foreign_KEY_CHECKS = 1 |
-+------------------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------+
-| Commit |
-+--------+
-| Commit |
-+--------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+-------------+
-| Select      |
-+-------------+
-| Show Tables |
-+-------------+
-1 row in set (0.00 sec)
-
-+--------------------+
-| Tables_in_Patterns |
-+--------------------+
-| owner              |
-| pSize              |
-| pType              |
-| pattern            |
-| publisher          |
-| size_Pattern       |
-| type_Pattern       |
-+--------------------+
-7 rows in set (0.00 sec)
-
-Database changed
-Query OK, 0 rows affected (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| owner      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| owner        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| owner       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected, 1 warning (0.00 sec)
-
-+---------+------+------------------------------------------------------------------------------+
-| Level   | Code | Message                                                                      |
-+---------+------+------------------------------------------------------------------------------+
-| Warning | 1366 | Incorrect integer value: 'daMom@gmail.com' for column 'owner_email' at row 1 |
-+---------+------+------------------------------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| publisher  |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| publisher    |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| publisher   |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.01 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pType      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pType        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pType       |
-+-------------+
 1 row in set (0.00 sec)
 
 Query OK, 1 row affected (0.02 sec)
 
 Empty set (0.00 sec)
 
-+------------+
-| Drop Table |
-+------------+
-| pSize      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pSize        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pSize       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected, 1 warning (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pattern    |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pattern      |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pattern     |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| pattern_Type |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1050 (42S01): Table 'type_Pattern' already exists
-+-------+------+-------------------------------------+
-| Level | Code | Message                             |
-+-------+------+-------------------------------------+
-| Error | 1050 | Table 'type_Pattern' already exists |
-+-------+------+-------------------------------------+
-1 row in set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.04 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-+---------------+
-| Drop Table    |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+---------------+
-| Create Table  |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-ERROR 1072 (42000): Key column 'owner_Pattern_pSize' doesn't exist in table
-+-------+------+---------------------------------------------------------+
-| Level | Code | Message                                                 |
-+-------+------+---------------------------------------------------------+
-| Error | 1072 | Key column 'owner_Pattern_pSize' doesn't exist in table |
-+-------+------+---------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+---------------+
-| Insert Into   |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.01 sec)
-
-ERROR 1146 (42S02): Table 'Patterns.owner_Pattern' doesn't exist
-+-------+------+----------------------------------------------+
-| Level | Code | Message                                      |
-+-------+------+----------------------------------------------+
-| Error | 1146 | Table 'Patterns.owner_Pattern' doesn't exist |
-+-------+------+----------------------------------------------+
-1 row in set (0.00 sec)
-
-+------------------------+
-| SET                    |
-+------------------------+
-| Foreign_KEY_CHECKS = 1 |
-+------------------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------+
-| Commit |
-+--------+
-| Commit |
-+--------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+-------------+
-| Select      |
-+-------------+
-| Show Tables |
-+-------------+
-1 row in set (0.00 sec)
-
-+--------------------+
-| Tables_in_Patterns |
-+--------------------+
-| owner              |
-| pSize              |
-| pType              |
-| pattern            |
-| publisher          |
-| size_Pattern       |
-| type_Pattern       |
-+--------------------+
-7 rows in set (0.00 sec)
-
-Database changed
-Query OK, 0 rows affected (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| owner      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| owner        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| owner       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected, 1 warning (0.01 sec)
-
-+---------+------+------------------------------------------------------------------------------+
-| Level   | Code | Message                                                                      |
-+---------+------+------------------------------------------------------------------------------+
-| Warning | 1366 | Incorrect integer value: 'daMom@gmail.com' for column 'owner_email' at row 1 |
-+---------+------+------------------------------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| publisher  |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| publisher    |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| publisher   |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pType      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pType        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pType       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pSize      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pSize        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pSize       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.01 sec)
-
-Query OK, 1 row affected, 1 warning (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pattern    |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pattern      |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pattern     |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| pattern_Type |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-ERROR 1050 (42S01): Table 'type_Pattern' already exists
-+-------+------+-------------------------------------+
-| Level | Code | Message                             |
-+-------+------+-------------------------------------+
-| Error | 1050 | Table 'type_Pattern' already exists |
-+-------+------+-------------------------------------+
-1 row in set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+---------------+
-| Drop Table    |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-+---------------+
-| Create Table  |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.04 sec)
-
-Empty set (0.00 sec)
-
-+---------------+
-| Insert Into   |
-+---------------+
-| owner_Pattern |
-+---------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+------------------------+
-| SET                    |
-+------------------------+
-| Foreign_KEY_CHECKS = 1 |
-+------------------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------+
-| Commit |
-+--------+
-| Commit |
-+--------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+-------------+
-| Select      |
-+-------------+
-| Show Tables |
-+-------------+
-1 row in set (0.00 sec)
-
-+--------------------+
-| Tables_in_Patterns |
-+--------------------+
-| owner              |
-| owner_Pattern      |
-| pSize              |
-| pType              |
-| pattern            |
-| publisher          |
-| size_Pattern       |
-| type_Pattern       |
-+--------------------+
-8 rows in set (0.00 sec)
-
-Database changed
-Query OK, 0 rows affected (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| owner      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| owner        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| owner       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected, 1 warning (0.01 sec)
-
-+---------+------+------------------------------------------------------------------------------+
-| Level   | Code | Message                                                                      |
-+---------+------+------------------------------------------------------------------------------+
-| Warning | 1366 | Incorrect integer value: 'daMom@gmail.com' for column 'owner_email' at row 1 |
-+---------+------+------------------------------------------------------------------------------+
-1 row in set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| publisher  |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| publisher    |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| publisher   |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pType      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.00 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pType        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pType       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pSize      |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pSize        |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pSize       |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-Query OK, 1 row affected, 1 warning (0.01 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-+------------+
-| Drop Table |
-+------------+
-| pattern    |
-+------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| pattern      |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.03 sec)
-
-Empty set (0.00 sec)
-
-+-------------+
-| Insert Into |
-+-------------+
-| pattern     |
-+-------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.00 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.02 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.04 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| type_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Drop Table   |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.01 sec)
-
-+--------------+
-| Create Table |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 0 rows affected (0.04 sec)
-
-Empty set (0.00 sec)
-
-+--------------+
-| Insert Into  |
-+--------------+
-| size_Pattern |
-+--------------+
-1 row in set (0.00 sec)
-
-Query OK, 1 row affected (0.01 sec)
-
-Empty set (0.00 sec)
-
 +---------------+
 | Drop Table    |
 +---------------+
@@ -2126,9 +623,9 @@ Query OK, 0 rows affected (0.01 sec)
 +---------------+
 1 row in set (0.00 sec)
 
-Query OK, 0 rows affected (0.02 sec)
+Query OK, 0 rows affected (0.03 sec)
 
-Empty set (0.01 sec)
+Empty set (0.00 sec)
 
 +---------------+
 | Insert Into   |
