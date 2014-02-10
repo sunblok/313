@@ -1,4 +1,4 @@
-TEE Describe_Patterns_DB.txt
+TEE texts/Describe_Patterns_DB.txt
 
 Use Patterns;
 

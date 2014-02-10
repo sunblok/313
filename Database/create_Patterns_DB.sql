@@ -1,4 +1,4 @@
-TEE create_Patterns.txt
+TEE texts/create_Patterns.txt
 
 Use Patterns;
 -- This enables dropping tables with foreign key dependencies.
@@ -13,29 +13,9 @@ SELECT 'owner' AS "Create Table";
 CREATE TABLE owner
 ( owner_id              INT UNSIGNED   PRIMARY KEY AUTO_INCREMENT
 , owner_name            CHAR(70)       NOT NULL
-, owner_email           INT UNSIGNED   NOT NULL
+, owner_email           VarChar(150)   NOT NULL
 , owner_date_created    DATE           NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'owner' AS "Insert Into";
-INSERT INTO owner
-( owner_name
-, owner_email
-, owner_date_created)
-VALUES
-('LaVona Comsa','daMom@gmail.com',UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'owner' AS "Insert Into";
-INSERT INTO owner
-( owner_name
-, owner_email
-, owner_date_created)
-VALUES
-('Jeane Leake','notDaMom@gmail.com',UTC_DATE());
 SHOW WARNINGS;
 
 -- Conditionally drop objects.
@@ -50,86 +30,6 @@ CREATE TABLE publisher
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;
 
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('Mccalls', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('Butterick', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('Vouge', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('Kwik Sew', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('Wallies', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('Burda', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('Simplicity', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('NewLook', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into owner
-SELECT 'publisher' AS "Insert Into";
-INSERT INTO publisher
-( publisher_name
-, publisher_date_created)
-VALUES
-('Neue Mode', UTC_DATE());
-SHOW WARNINGS;
 
 -- Conditionally drop objects.
 SELECT 'pType' AS "Drop Table";
@@ -143,230 +43,6 @@ CREATE TABLE pType
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;
 
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Dress', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Pants', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Top', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Skirt', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Jaket', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Costume', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Children', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Baby', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Bridal', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Evening', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Prom', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Cape', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Shorts', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Activewear', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Suit', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Vest', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Poncho', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Apron', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Uniform', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Sleapwear', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Crafts', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Halloween', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Historical', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Religious', UTC_DATE());
-SHOW WARNINGS;
-
--- Insert into pType
-SELECT 'pType' AS "Insert Into";
-INSERT INTO pType
-( pType_name
-, pType_date_created)
-VALUES
-('Accessory', UTC_DATE());
-SHOW WARNINGS;
 
 -- Conditionally drop objects.
 SELECT 'pSize' AS "Drop Table";
@@ -380,43 +56,6 @@ CREATE TABLE pSize
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;
 
--- Insert into pSize
-SELECT 'pSize' AS "Insert Into";
-
-INSERT INTO pSize
-( pSize_size
-, pSize_date_created)
-VALUES
-('XS', UTC_DATE());
-SHOW WARNINGS;
-
-INSERT INTO pSize
-( pSize_size
-, pSize_date_created)
-VALUES
-('S', UTC_DATE());
-SHOW WARNINGS;
-
-INSERT INTO pSize
-( pSize_size
-, pSize_date_created)
-VALUES
-('M', UTC_DATE());
-SHOW WARNINGS;
-
-INSERT INTO pSize
-( pSize_size
-, pSize_date_created)
-VALUES
-('L', UTC_DATE());
-SHOW WARNINGS;
-
-INSERT INTO pSize
-( pSize_size
-, pSize_date_created)
-VALUES
-('XL', UTC_DATE());
-SHOW WARNINGS;
 
 -- Conditionally drop objects.
 SELECT 'pattern' AS "Drop Table";
@@ -436,25 +75,6 @@ CREATE TABLE pattern
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;
 
--- Insert into pattern
-SELECT 'pattern' AS "Insert Into";
-INSERT INTO pattern
-( pattern_name
-, pattern_number
-, pattern_dateAdded
-, pattern_picture
-, pattern_publisher
-, pattern_date_created)
-VALUES
-('Misses/Miss Petite Dress'
-, '6698MCC'
-, UTC_DATE()
-, 'Database/Pictures/mcc6698.jpg'
-, (SELECT publisher_id
-   FROM publisher
-   WHERE publisher_name = 'Mccalls')
-,UTC_DATE());
-SHOW WARNINGS;
 
 
 -- Conditionally drop objects.
@@ -473,22 +93,6 @@ CREATE TABLE type_Pattern
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;
 
--- Insert into type_Pattern
-SELECT 'type_Pattern' AS "Insert Into";
-INSERT INTO type_Pattern
-( type_Pattern_pType
-, type_Pattern_pattern)
-VALUES
-((SELECT pType_id
-   FROM pType
-   WHERE pType_name = 'Dress')
-, (SELECT pattern_id
-   FROM pattern
-   WHERE pattern_number = '6698MCC')
-);
-SHOW WARNINGS;
-
-
 -- Conditionally drop objects.
 SELECT 'size_Pattern' AS "Drop Table";
 DROP TABLE IF EXISTS size_Pattern;
@@ -504,23 +108,6 @@ CREATE TABLE size_Pattern
 , CONSTRAINT size_Pattern_fk2 FOREIGN KEY (size_Pattern_pattern) REFERENCES pattern (pattern_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;
-
--- Insert into size_Pattern
-SELECT 'size_Pattern' AS "Insert Into";
-INSERT INTO size_Pattern
-( size_Pattern_pSize
-, size_Pattern_pattern)
-VALUES
-((SELECT pSize_id
-   FROM pSize
-   WHERE pSize_size = 'M')
-, (SELECT pattern_id
-   FROM pattern
-   WHERE pattern_number = '6698MCC')
-);
-SHOW WARNINGS;
-
-
 
 -- Conditionally drop objects.
 SELECT 'owner_Pattern' AS "Drop Table";
@@ -539,20 +126,6 @@ CREATE TABLE owner_Pattern
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;
 
--- Insert into owner_Pattern
-SELECT 'owner_Pattern' AS "Insert Into";
-INSERT INTO owner_Pattern
-( owner_Pattern_owner
-, owner_Pattern_pattern)
-VALUES
-((SELECT owner_id
-   FROM owner
-   WHERE owner_name = 'LaVona Comsa')
-, (SELECT pattern_id
-   FROM pattern
-   WHERE pattern_number = '6698MCC')
-);
-SHOW WARNINGS;
 
 
 SELECT 'Foreign_KEY_CHECKS = 1' as 'SET';
@@ -568,3 +141,5 @@ SHOW TABLES;
 
 -- Close log file.
 NOTEE
+
+SOURCE seed_Patterns_DB.sql

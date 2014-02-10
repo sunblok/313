@@ -17,6 +17,9 @@
                <tr>
                   <th><a href="/Assignments/form.php">Assignment 1: Survey</a></th>
                </tr>
+               <tr>
+                  <th><a href="/Assignments/patterns.php">Assignment 2: Patterns</a></th>
+               </tr>
             </table>
          <hr/>
       </body>
