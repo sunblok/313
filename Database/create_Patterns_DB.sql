@@ -15,6 +15,8 @@ CREATE TABLE owner
 , owner_name            CHAR(70)       NOT NULL
 , owner_email           VarChar(150)   NOT NULL
 , owner_date_created    DATE           NOT NULL
+, owner_user_name       VarChar(150)   NOT NULL
+, owner_password        VarChar(150)   NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;
 
@@ -65,8 +67,7 @@ SELECT 'pattern' AS "Create Table";
 CREATE TABLE pattern
 ( pattern_id           INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
 , pattern_name         CHAR(70)       NOT NULL
-, pattern_number       VARCHAR(20)    NOT NULL
-, pattern_dateAdded    DATE           NOT NULL
+, pattern_number       VARCHAR(20)    NOT NULL UNIQUE
 , pattern_picture      VARCHAR(200)   NOT NULL
 , pattern_publisher    INT UNSIGNED   NOT NULL
 , pattern_date_created DATE           NOT NULL

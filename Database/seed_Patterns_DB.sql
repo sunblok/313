@@ -6,11 +6,15 @@ SELECT 'owner' AS "Insert Into";
 INSERT INTO owner
 ( owner_name
 , owner_email
-, owner_date_created)
+, owner_date_created
+, owner_user_name
+, owner_password)
 VALUES
-('LaVona Comsa','daMom@gmail.com',UTC_DATE())
+('LaVona Comsa','daMom@gmail.com',UTC_DATE(),'mom','damom')
 ,
-('Jeane Leake','notDaMom@gmail.com',UTC_DATE());
+('Jeane Leake','notDaMom@gmail.com',UTC_DATE(),'notmom','notdamom')
+,
+('Root','Root@gmail.com',UTC_DATE(),'test','password');
 SHOW WARNINGS;
 
 
@@ -90,14 +94,12 @@ SELECT 'pattern' AS "Insert Into";
 INSERT INTO pattern
 ( pattern_name
 , pattern_number
-, pattern_dateAdded
 , pattern_picture
 , pattern_publisher
 , pattern_date_created)
 VALUES
 ('Misses/Miss Petite Dress'
 , '6698MCC'
-, UTC_DATE()
 , 'Database/Pictures/mcc6698.jpg'
 , (SELECT publisher_id
    FROM publisher
@@ -107,7 +109,6 @@ VALUES
 ,
 ('Dress and Tunic'
 , '6936BUR'
-, UTC_DATE()
 , 'Database/Pictures/bur6936.jpg'
 , (SELECT publisher_id
    FROM publisher
@@ -117,7 +118,6 @@ VALUES
 ,
 ('Jacket'
 , '6901BUR'
-, UTC_DATE()
 , 'Database/Pictures/bur6901.jpg'
 , (SELECT publisher_id
    FROM publisher

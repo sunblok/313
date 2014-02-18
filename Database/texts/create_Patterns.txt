@@ -806,3 +806,1423 @@ Query OK, 0 rows affected (0.00 sec)
 +--------------------+
 8 rows in set (0.00 sec)
 
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| owner      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| owner        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| publisher  |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
++--------------+
+| Create Table |
++--------------+
+| publisher    |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pType      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pType        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pSize      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pSize        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pattern    |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pattern      |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++---------------+
+| Drop Table    |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++---------------+
+| Create Table  |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++--------------------+
+| Tables_in_Patterns |
++--------------------+
+| owner              |
+| owner_Pattern      |
+| pSize              |
+| pType              |
+| pattern            |
+| publisher          |
+| size_Pattern       |
+| type_Pattern       |
++--------------------+
+8 rows in set (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| owner      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| owner        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| publisher  |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| publisher    |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pType      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pType        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pSize      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pSize        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pattern    |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pattern      |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
++--------------+
+| Create Table |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
++--------------+
+| Create Table |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++---------------+
+| Drop Table    |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++---------------+
+| Create Table  |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++--------------------+
+| Tables_in_Patterns |
++--------------------+
+| owner              |
+| owner_Pattern      |
+| pSize              |
+| pType              |
+| pattern            |
+| publisher          |
+| size_Pattern       |
+| type_Pattern       |
++--------------------+
+8 rows in set (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| owner      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| owner        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| publisher  |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| publisher    |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Empty set (0.01 sec)
+
++------------+
+| Drop Table |
++------------+
+| pType      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pType        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pSize      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pSize        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pattern    |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pattern      |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++---------------+
+| Drop Table    |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++---------------+
+| Create Table  |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++--------------------+
+| Tables_in_Patterns |
++--------------------+
+| owner              |
+| owner_Pattern      |
+| pSize              |
+| pType              |
+| pattern            |
+| publisher          |
+| size_Pattern       |
+| type_Pattern       |
++--------------------+
+8 rows in set (0.00 sec)
+
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| owner      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| owner        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| publisher  |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
++--------------+
+| Create Table |
++--------------+
+| publisher    |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pType      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pType        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pSize      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pSize        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pattern    |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pattern      |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++---------------+
+| Drop Table    |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++---------------+
+| Create Table  |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++--------------------+
+| Tables_in_Patterns |
++--------------------+
+| owner              |
+| owner_Pattern      |
+| pSize              |
+| pType              |
+| pattern            |
+| publisher          |
+| size_Pattern       |
+| type_Pattern       |
++--------------------+
+8 rows in set (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| owner      |
++------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| owner        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| publisher  |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| publisher    |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pType      |
++------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pType        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pSize      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pSize        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pattern    |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pattern      |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.01 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++---------------+
+| Drop Table    |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++---------------+
+| Create Table  |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++--------------------+
+| Tables_in_Patterns |
++--------------------+
+| owner              |
+| owner_Pattern      |
+| pSize              |
+| pType              |
+| pattern            |
+| publisher          |
+| size_Pattern       |
+| type_Pattern       |
++--------------------+
+8 rows in set (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| owner      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| owner        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| publisher  |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
++--------------+
+| Create Table |
++--------------+
+| publisher    |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pType      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pType        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pSize      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pSize        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pattern    |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pattern      |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.07 sec)
+
+Empty set (0.01 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
++--------------+
+| Create Table |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++---------------+
+| Drop Table    |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++---------------+
+| Create Table  |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++--------------------+
+| Tables_in_Patterns |
++--------------------+
+| owner              |
+| owner_Pattern      |
+| pSize              |
+| pType              |
+| pattern            |
+| publisher          |
+| size_Pattern       |
+| type_Pattern       |
++--------------------+
+8 rows in set (0.00 sec)
+
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| owner      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| owner        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| publisher  |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| publisher    |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pType      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pType        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pSize      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pSize        |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| pattern    |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| pattern      |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++--------------+
+| Drop Table   |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++---------------+
+| Drop Table    |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++---------------+
+| Create Table  |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++--------------------+
+| Tables_in_Patterns |
++--------------------+
+| owner              |
+| owner_Pattern      |
+| pSize              |
+| pType              |
+| pattern            |
+| publisher          |
+| size_Pattern       |
+| type_Pattern       |
++--------------------+
+8 rows in set (0.00 sec)
+

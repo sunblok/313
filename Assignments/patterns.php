@@ -66,7 +66,7 @@
             //This sorts by publisher
             echo "<table border = '1' > <th>Publisher</th><th>Type</th><th>All</th>";
             echo"<tr><td><form action=\"sqlPatterns.php\" method=\"post\">";
-            $publisher = $mysqli->query("select distinct u.publisher_name, publisher_id from pattern as p join publisher as u on p.pattern_publisher = u.publisher_id");
+            $publisher = $mysqli->query("select distinct u.publisher_name, publisher_id from pattern as p join publisher as u on p.pattern_publisher = u.publisher_id ORDER BY publisher_name");
             echo "<select name = \"publisher\"> "; //onchange = \"handleChange(value) \">
             while ($row = $publisher->fetch_assoc())
             {
@@ -76,7 +76,7 @@
             
            //This sorts by type 
             echo "<td><form action=\"type.php\" method=\"post\">";
-            $type = $mysqli->query(" select t.pType_name,t.pType_id from pType as t join type_Pattern as p where p.type_Pattern_pType = t.pType_id");
+            $type = $mysqli->query(" select t.pType_name,t.pType_id from pType as t join type_Pattern as p where p.type_Pattern_pType = t.pType_id ORDER BY pType_name");
             echo "<select name = \"pType\"> "; //onchange = \"handleChange(value) \">
             while ($row = $type->fetch_assoc())
             {

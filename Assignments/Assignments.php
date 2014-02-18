@@ -20,6 +20,9 @@
                <tr>
                   <th><a href="/Assignments/patterns.php">Assignment 2: Patterns</a></th>
                </tr>
+               <tr>
+                  <th><a href="/Assignments/Signin.php">Assignment 3: Insert into Database</a></th>
+               </tr>
             </table>
          <hr/>
       </body>
