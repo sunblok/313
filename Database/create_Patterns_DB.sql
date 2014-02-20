@@ -12,10 +12,10 @@ DROP TABLE IF EXISTS owner;
 SELECT 'owner' AS "Create Table";
 CREATE TABLE owner
 ( owner_id              INT UNSIGNED   PRIMARY KEY AUTO_INCREMENT
-, owner_name            CHAR(70)       NOT NULL
+, owner_name            CHAR(70)       NOT NULL UNIQUE
 , owner_email           VarChar(150)   NOT NULL
 , owner_date_created    DATE           NOT NULL
-, owner_user_name       VarChar(150)   NOT NULL
+, owner_user_name       VarChar(150)   NOT NULL UNIQUE
 , owner_password        VarChar(150)   NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SHOW WARNINGS;

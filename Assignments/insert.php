@@ -1,35 +1,38 @@
 <?php
    session_start();
    require_once('../Database/pass/pass.php');        
-   // $mysqli = new mysqli($host,$user ,$pass ,$base);
-   // $name = $_POST["name"];
-   // $pass = $_POST["password"];
+   $mysqli = new mysqli($host,$user ,$pass ,$base);
+   $name = $_POST["name"];
+   $pass = $_POST["password"];
    
-   // if ($mysqli->connect_errno)
-   // {
-      // echo "Failed to connect to MySQL: " . $mysqli->connect_error;
-   // }
-   // else
-   // {
-      //$owner = $mysqli->query("SELECT * FROM owner WHERE owner_user_name = $name");
+   if ($mysqli->connect_errno)
+   {
+      echo "Failed to connect to MySQL: " . $mysqli->connect_error;
+   }
+   else
+   {
+      $owner = $mysqli->query("SELECT * FROM owner WHERE owner_user_name = '$name'");
       $goodPass = "";
       $ownerID = 0;
       
-      // while ($row = $owner->fetch_assoc())
-      // {
-         // $goodPass = $row["owner_password"];
-         // $ownerID = $row["owner_id"];
-      // }
-      // echo "good3";
-      // if($pass != $goodPass)
-      // { 
-         // header("Location: Signin.php");
-         // exit;
-      // }
+      while ($row = $owner->fetch_assoc())
+      {
+         $goodPass = $row["owner_password"];
+         $ownerID = $row["owner_id"];
+      }
       
-      $_Session["Signedin"] = "TRUE";
-      $_Session["Owner"] = $ownerID;
-   //}
+      $inhash = hash("sha256", $pass);
+      
+      //echo $inhash . "><" . $goodPass;
+      if($inhash != $goodPass)
+      { 
+         //header("Location: Signin.php");
+         exit;
+      }
+      
+      $_SESSION["Signedin"] = "TRUE";
+      $_SESSION["Owner"] = $ownerID;
+   }
 ?>
 <?xml version = "1.0" encoding "utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
@@ -50,7 +53,7 @@
       ?>
       <hr />
       <?php
-         require_once('../Database/pass/pass.php');        
+         require('../Database/pass/pass.php');        
          $mysqli = new mysqli($host,$user ,$pass ,$base );
          
          if ($mysqli->connect_errno)
@@ -59,7 +62,7 @@
          }
          else
          {  
-            echo "<form action='confirmation.php' method='post' id = 'submit'><table border = '1' ><tr><th>Owner</th><th>Pattern</th><th>Publisher</th><th>Type</th><th>Picture</th><th>Size</th>";
+            echo "<form action='uploadPic.php' method='post' id = 'submit'><table border = '1' ><tr><th>Owner</th><th>Pattern</th><th>Publisher</th><th>Type</th><th>Size</th>";
             echo"</tr><tr><td>";
             //Owner
             
@@ -92,24 +95,23 @@
             {
                echo  "<input type= 'checkbox' name='type[]' value='".$row["pType_id"]."'>".$row["pType_name"]."</br>";
             }
-            //Picture
+           /*  //Picture
             echo "</td><td>";
+            //echo "<button onclick='location.href='uploadPic.php''>www.example.com</button>";
             echo "<input type='button' disabled = 'true' name='uploadPictures' value='Upload Picture'></br>";
                
             //gets the pictures you can upload.
             echo "<div id = 'dir'>";
             require_once('dir.php');
-            echo "</div>";
+            echo "</div>"; */
             //Size
             echo "</td><td>";
             $size = $mysqli->query("SELECT * FROM pSize");
             while ($row = $size->fetch_assoc())
             {
                echo  "<input type= 'checkbox' name='size[]' value='".$row["pSize_id"]."'>".$row["pSize_size"]."</br>";
-              
             }
-            
-            echo "</td></tr></table><input type='submit' name='submit' form = 'submit' value='Submit'></form>";
+            echo "</td></tr></table><input type='submit' name='submit' form = 'submit' value='Next'></form>";
          }
       ?>
    </body>

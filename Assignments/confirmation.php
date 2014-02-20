@@ -1,10 +1,10 @@
 <?php
    session_start();
-   // if($_SESSION["Signedin"] != "TRUE")
-   // {
-      // header("Location: Signin.php");
-      // exit;
-   // }
+   if($_SESSION["Signedin"] != "TRUE")
+   {
+      header("Location: Signin.php");
+      exit;
+   }
 ?>
 <?xml version = "1.0" encoding "utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
@@ -89,7 +89,7 @@
                   // echo "<h3>Type Warnings = </h3>".$warnings."</br>";
                   
                   //Writes log
-                  $query = $time . " () ".$ownerId ." ". $query . PHP_EOL;
+                  $query = $query . PHP_EOL;
                   fwrite($file,$query) ."</br>";
                }
                
@@ -103,7 +103,7 @@
                   // $warnings = $mysqli->warning_count();
                   // echo "<h3>Size Warnings = </h3>".$warnings."</br>";
                   //Writes log
-                  $query = $time . " () ".$ownerId ." ". $query . PHP_EOL;
+                  $query = $query . PHP_EOL;
                   fwrite($file,$query);
                }
                //Inserts into owner_Pattern
@@ -116,7 +116,7 @@
                   // $warnings = $mysqli->warning_count();
                   // echo "<h3>owner Warnings = </h3>".$warnings."</br>";
                   //Writes log
-                  $query = $time . " () ".$ownerId ." ". $query . PHP_EOL;
+                  $query = $query . PHP_EOL;
                   fwrite($file,$query);
                }
                 

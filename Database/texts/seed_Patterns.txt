@@ -1292,3 +1292,321 @@ Empty set (0.00 sec)
 
 Query OK, 0 rows affected (0.00 sec)
 
+Database changed
++-------------+
+| Insert Into |
++-------------+
+| owner       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 9 rows affected (0.00 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 26 rows affected (0.02 sec)
+Records: 26  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pSize       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 5 rows affected (0.00 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pattern     |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.02 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------------+
+| Insert Into  |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------------+
+| Insert Into  |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++---------------+
+| Insert Into   |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Database changed
++-------------+
+| Insert Into |
++-------------+
+| owner       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 9 rows affected (0.00 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 26 rows affected (0.00 sec)
+Records: 26  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pSize       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 5 rows affected (0.02 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pattern     |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------------+
+| Insert Into  |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------------+
+| Insert Into  |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++---------------+
+| Insert Into   |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Database changed
++-------------+
+| Insert Into |
++-------------+
+| owner       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| publisher   |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 9 rows affected (0.01 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pType       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 26 rows affected (0.03 sec)
+Records: 26  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pSize       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++-------------+
+| Insert Into |
++-------------+
+| pattern     |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------------+
+| Insert Into  |
++--------------+
+| type_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 4 rows affected (0.04 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------------+
+| Insert Into  |
++--------------+
+| size_Pattern |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++---------------+
+| Insert Into   |
++---------------+
+| owner_Pattern |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+

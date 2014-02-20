@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <?xml version = "1.0" encoding "utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -25,9 +30,12 @@
          }
          else
          {
+            //echo "<form action='hash.php' method='post' id = 'submit'>";
             echo "<form action='insert.php' method='post' id = 'submit'>";
-            echo "Username:<input type='text' name='name'><br/>Password:<input type='password' name='password'><br/>";
-            echo "<input type='submit' name='submit' form = 'submit' value='Submit'></form>";
+            echo "Username:<input type='text' name='name'><br/>
+            Password:<input type='password' id = 'ps2' name='password'><br/>";//Password:<input type='password' id = 'ps1' name='password'><br/>
+            echo "<input type='submit' name='submit' form = 'submit' value='Submit'>";
+            echo "</form>";
          }
       ?>
    </body>
