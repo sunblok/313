@@ -48,7 +48,7 @@
          require "../links.php";
       ?>
       <hr />
-   <form action="results.php" method="post">
+   <form action="result.php" method="post">
       <table border = "1">
          <tr><th> Major:</th><th> Which would you rather have?:</th><th> Places Visited:</th><th> What animals have you owned?:</th></tr>
          

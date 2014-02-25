@@ -11,25 +11,27 @@
    }
    else
    {
-      $owner = $mysqli->query("SELECT * FROM owner WHERE owner_user_name = '$name'");
-      $goodPass = "";
-      $ownerID = 0;
-      
-      while ($row = $owner->fetch_assoc())
+      if ($_SESSION["Signedin"] != "TRUE")
       {
-         $goodPass = $row["owner_password"];
-         $ownerID = $row["owner_id"];
+         $owner = $mysqli->query("SELECT * FROM owner WHERE owner_user_name = '$name'");
+         $goodPass = "";
+         $ownerID = 0;
+         
+         while ($row = $owner->fetch_assoc())
+         {
+            $goodPass = $row["owner_password"];
+            $ownerID = $row["owner_id"];
+         }
+         
+         $inhash = hash("sha256", $pass);
+         
+         //echo $inhash . "><" . $goodPass;
+         if($inhash != $goodPass)
+         { 
+            //header("Location: Signin.php");
+            exit;
+         }
       }
-      
-      $inhash = hash("sha256", $pass);
-      
-      //echo $inhash . "><" . $goodPass;
-      if($inhash != $goodPass)
-      { 
-         //header("Location: Signin.php");
-         exit;
-      }
-      
       $_SESSION["Signedin"] = "TRUE";
       $_SESSION["Owner"] = $ownerID;
    }

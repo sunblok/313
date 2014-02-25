@@ -11,8 +11,8 @@
    //echo $inhash . "><" . $goodPass;
    if($_SESSION["Signedin"] != "TRUE")
    {
-      header("Location: Signin.php");
-      exit;
+      //header("Location: Signin.php");
+      //exit;
    }
 ?>
 <?xml version = "1.0" encoding "utf-8"?>
@@ -27,11 +27,21 @@
       <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
    </head>
    <body>
+   <h2> Select the picture or if you don't see it upload it.</h2>
+   
+   <form action="confirmation.php" method="post">
+   <?php
+      echo $_SESSION["Responce"]. "";
+      require "dir.php";
+   ?><br>
+   <input type="submit" name="submit" value="Submit to Database">
+   </form><br><br>
+   
    <form action="upload_file.php" method="post"
    enctype="multipart/form-data">
    <label for="file">Filename:</label>
    <input type="file" name="file" id="file"><br>
-   <input type="submit" name="submit" value="Submit">
+   <input type="submit" name="submit" value="Upload">
    </form>
 
 </body>

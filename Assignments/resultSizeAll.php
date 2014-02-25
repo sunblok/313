@@ -10,7 +10,7 @@
       <link rel = "stylesheet" type = "text/css" href="/css/demo.css">
    </head>
       <body>
-         <h1> Ma's Patterns </h1>
+         <h1> Ma's Patterns Size </h1>
          <hr />
          <?php
             require "../links.php";
@@ -27,25 +27,28 @@
             else
             {  
                
-               $publisher = $mysqli->query("select publisher_name from publisher where publisher_id =" . $_POST["publisher"]);
-               while ($row = $publisher->fetch_assoc())
-               {
-                  echo  "<h3>".$row["publisher_name"] . "</h3>";
-               }
-               
+               $pattern = $mysqli->query("SELECT * FROM pattern AS p JOIN size_Pattern as s JOIN pSize AS i JOIN publisher as b WHERE b.publisher_id = p.pattern_publisher AND  p.pattern_id = s.size_Pattern_pattern AND s.size_Pattern_pSize = i.pSize_id ORDER BY pSize_id");
+                  echo  "<h3>All by Size</h3>";
                $count = 0;
                echo "<table border = '1'><tr>";
-               $pattern = $mysqli->query("select pattern_name, pattern_number, pattern_picture from pattern where pattern_publisher =" . $_POST["publisher"]);
+               $size = -1;
                while ($row = $pattern->fetch_assoc())
                {
-                  echo  "<td>".$row["pattern_name"] ."</br>". $row["pattern_number"] 
+                  if ($size != $row["size_Pattern_pSize"])
+                  {
+                     echo "<tr><td><h3>". $row["pSize_size"]."</h3></td>";
+                     $size = $row["size_Pattern_pSize"]; 
+                     $count = 0;
+                  }
+                  echo  "<td>".$row["pattern_name"] ."</br>". $row["publisher_name"] ."</br>". $row["pattern_number"] 
                   ."</br><img src = \"../" . $row["pattern_picture"]."\" alt = \"" . $row["pattern_number"]. " \" height = \"200\" width = \"150\" > </td>";
-                  $count = $count +1;
-                  // if ($count == 5);
-                  // {
-                     // echo "</tr><tr>";
-                     // $count = 0;
-                  // }
+                  $count = $count + 1;
+                  if ($count == 6)
+                  {
+                     echo "</tr><tr>";
+                     $count = 0;
+                  }
+               
                }
                echo "</tr></table>";
             }

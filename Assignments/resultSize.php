@@ -10,7 +10,7 @@
       <link rel = "stylesheet" type = "text/css" href="/css/demo.css">
    </head>
       <body>
-         <h1> Ma's Patterns Types </h1>
+         <h1> Ma's Patterns Sizes </h1>
          <hr />
          <?php
             require "../links.php";
@@ -26,25 +26,33 @@
             }
             else
             {  
+               //Selects the size of the patterns
+               $pSize = $_POST["pSize"];
+               $size = $mysqli->query("select * from pSize WHERE pSize_id = $pSize");
                
-               $pattern = $mysqli->query("select * from pattern");
-                  echo  "<h3>All</h3>";
+               while ($row = $size->fetch_assoc())
+               {
+                  echo  "<h3>".$row["pSize_size"] . "</h3>";
+               } 
+               
+               
                $count = 0;
                echo "<table border = '1'><tr>";
+               $pattern = $mysqli->query("select p.pattern_name, p.pattern_number, p.pattern_picture from pattern as p join size_Pattern as s where s.size_Pattern_pattern = p.pattern_id and s.size_Pattern_pSize = $pSize");
                while ($row = $pattern->fetch_assoc())
                {
                   echo  "<td>".$row["pattern_name"] ."</br>". $row["pattern_number"] 
                   ."</br><img src = \"../" . $row["pattern_picture"]."\" alt = \"" . $row["pattern_number"]. " \" height = \"200\" width = \"150\" > </td>";
-                  $count = $count + 1;
-                  // if ($count == 5);
-                  // {
-                     // echo "</tr><tr>";
-                     // $count = 0;
-                  // }
+                  $count = $count +1;
+                  if ($count == 5)
+                  {
+                     echo "</tr><tr>";
+                     $count = 0;
+                  }
                }
                echo "</tr></table>";
             }
-         ?>
+?>
          <form method = "LINK" Action = "patterns.php">
             <input type="submit" value = "Back">
          </form>

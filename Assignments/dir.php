@@ -6,7 +6,12 @@
    {
       if ($txt != ".." and $txt != ".")
       {
-         echo "<input type= 'radio' name='picture' value='$txt'>$txt</br>";
+         echo "<div ";
+         if ($_SESSION["FILE"] == $txt)
+         {
+            echo "class = 'up'";
+         }
+         echo "><input type= 'radio' name='picture' value='$txt'>$txt</br></div>";
       }
    }
 ?>
