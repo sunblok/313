@@ -26,26 +26,22 @@
             }
             else
             {  
-               
-               $type = $mysqli->query("select pType_name from pType where pType_id =" . $_POST["pType"]);
-               while ($row = $type->fetch_assoc())
-               {
-                  echo  "<h3>".$row["pType_name"] . "</h3>";
-               }
-               
+               $pattern = $mysqli->query("SELECT * FROM pattern AS p JOIN publisher as u WHERE p.pattern_publisher = u.publisher_id ORDER BY pattern_publisher");
+                  echo  "<h3>All</h3>";
                $count = 0;
                echo "<table border = '1'><tr>";
-               $pattern = $mysqli->query("select p.pattern_name, p.pattern_number, p.pattern_picture from pattern as p join type_Pattern as t where t.type_Pattern_pattern = p.pattern_id and t.type_Pattern_pType =" . $_POST["pType"]);
+               $pub = -1;
                while ($row = $pattern->fetch_assoc())
                {
                   echo  "<td>".$row["pattern_name"] ."</br>". $row["pattern_number"] 
                   ."</br><img src = \"../" . $row["pattern_picture"]."\" alt = \"" . $row["pattern_number"]. " \" height = \"200\" width = \"150\" > </td>";
-                  $count = $count +1;
-                  // if ($count == 5);
-                  // {
-                     // echo "</tr><tr>";
-                     // $count = 0;
-                  // }
+                  $count = $count + 1;
+                  if ($count == 5)
+                  {
+                     echo "</tr><tr>";
+                     $count = 0;
+                  }
+               
                }
                echo "</tr></table>";
             }

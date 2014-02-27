@@ -1,0 +1,9 @@
+7:19:8;;February-25-2014 () 0 
+INSERT INTO pattern( pattern_name, pattern_number, pattern_picture, pattern_publisher, pattern_date_created) VALUES ('Misses Dress', 'K3949', 'Database/Pictures/K3949.jpg', 4,UTC_DATE());
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (1, 6);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (1, 6);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (3, 6);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (6, 6);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (12, 6);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (16, 6);
+INSERT INTO owner_Pattern( owner_Pattern_owner, owner_Pattern_pattern) VALUES (1, 6);

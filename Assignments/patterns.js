@@ -19,3 +19,9 @@ function handleResult(result)
 {
    // alert("got this back" + result);
 }
+
+
+function findSize()
+{
+
+}

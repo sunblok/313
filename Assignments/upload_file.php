@@ -11,17 +11,12 @@ if ((($_FILES["file"]["type"] == "image/gif")
 || ($_FILES["file"]["type"] == "image/pjpeg")
 || ($_FILES["file"]["type"] == "image/x-png")
 || ($_FILES["file"]["type"] == "image/png"))
-&& ($_FILES["file"]["size"] < 100000)
+&& ($_FILES["file"]["size"] < 1000000)
 && in_array($extension, $allowedExts))
   {
    if ($_FILES["file"]["error"] > 0)
    {
-      echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
-      for ($i = 1; $i <16; $i = $i+1)
-      {
-         echo $i . " ";
-         sleep(1);
-      }
+      $_SESSION["Responce"] = "Return Code: " . $_FILES["file"]["error"] . "<br>";
    }
    else
    {
@@ -32,36 +27,23 @@ if ((($_FILES["file"]["type"] == "image/gif")
 
       if (file_exists("../Database/Pictures/" . $_FILES["file"]["name"]))
       {
-         echo $_FILES["file"]["name"] . " already exists. ";
-         for ($i = 1; $i <16; $i = $i+1)
-      {
-         echo $i . " ";
-         sleep(1);
-      }
+         $_SESSION["Responce"] = $_FILES["file"]["name"]. "already exists. ";
       }
       else
       {
          move_uploaded_file($_FILES["file"]["tmp_name"],
-         "upload/" . $_FILES["file"]["name"]);
-         echo "Stored in: " . "Database/Pictures/" . $_FILES["file"]["name"];
-         for ($i = 1; $i <16; $i = $i+1)
-      {
-         echo $i . " ";
-         sleep(1);
+         "../Database/Pictures/" . $_FILES["file"]["name"]);
+         $_SESSION["Responce"] = "Stored as: " . $_FILES["file"]["name"];
       }
-      }
+      $_SESSION["FILE"] = $_FILES["file"]["name"];
    }
   }
 else
 {
-   echo "Invalid file";
-   for ($i = 1; $i <16; $i = $i+1)
-   {
-      echo $i . " ";
-      sleep(1);
-   }
+   
+   $_SESSION["Responce"] = "Invalid file";
    header("Location: uploadPic.php");
    exit;
 }
-   header("Location: confirmation.php");
+   header("Location: uploadPic.php");
 ?>

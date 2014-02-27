@@ -12,7 +12,7 @@ INSERT INTO owner
 VALUES
 ('LaVona Comsa','daMom@gmail.com',UTC_DATE(),'mom','62d8aadc3115f596fa3e6a974f0d2a24de6d5473a7c3d26b7aa01c8b6bee57ae')
 ,
-('Jeane Leake','notDaMom@gmail.com',UTC_DATE(),'notmom','ec5d7962c047c5f1443aa3e4fa935b62fd941a76d0fe0f60e6aeb122b55f0f21')
+('Jeanne Leake','notDaMom@gmail.com',UTC_DATE(),'notmom','ec5d7962c047c5f1443aa3e4fa935b62fd941a76d0fe0f60e6aeb122b55f0f21')
 ,
 ('Root','Root@gmail.com',UTC_DATE(),'test','5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8');
 SHOW WARNINGS;
@@ -86,6 +86,21 @@ VALUES
 ,('M', UTC_DATE())
 ,('L', UTC_DATE())
 ,('XL', UTC_DATE())
+,('8', UTC_DATE())
+,('10', UTC_DATE())
+,('12', UTC_DATE())
+,('14', UTC_DATE())
+,('16', UTC_DATE())
+,('18', UTC_DATE())
+,('20', UTC_DATE())
+,('22', UTC_DATE())
+,('24', UTC_DATE())
+,('26', UTC_DATE())
+,('28', UTC_DATE())
+,('30', UTC_DATE())
+,('32', UTC_DATE())
+,('34', UTC_DATE())
+,('36', UTC_DATE())
 ;
 SHOW WARNINGS;
 
@@ -151,6 +166,14 @@ VALUES
 ((SELECT pType_id
    FROM pType
    WHERE pType_name = 'Tunic')
+, (SELECT pattern_id
+   FROM pattern
+   WHERE pattern_number = '6936BUR')
+)
+,
+((SELECT pType_id
+   FROM pType
+   WHERE pType_name = 'Dress')
 , (SELECT pattern_id
    FROM pattern
    WHERE pattern_number = '6936BUR')
@@ -226,6 +249,22 @@ VALUES
    WHERE pattern_number = '6901BUR')
 );
 SHOW WARNINGS;
+
+INSERT INTO pattern( pattern_name, pattern_number, pattern_picture, pattern_publisher, pattern_date_created)VALUES ('Dress', 'B3906', 'Database/Pictures/B3906.jpg', 2,UTC_DATE());
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (6, 4);
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (1, 4);
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (23, 4);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (2, 4);
+INSERT INTO owner_Pattern( owner_Pattern_owner, owner_Pattern_pattern) VALUES (1, 4);
+
+INSERT INTO pattern( pattern_name, pattern_number, pattern_picture, pattern_publisher, pattern_date_created) VALUES ('Aprons', 'B5474', 'Database/Pictures/B5474.jpg', 2,UTC_DATE());
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (19, 5);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (1, 5);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (2, 5);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (3, 5);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (4, 5);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (5, 5);
+INSERT INTO owner_Pattern( owner_Pattern_owner, owner_Pattern_pattern) VALUES (1, 5);
 
 SELECT 'Commit' as 'Commit';
 -- Commit inserts.
