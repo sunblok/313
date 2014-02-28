@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+C:\Users\Sunblok\Documents\CS 313 Web Dev II\313\Java\.metadata\.plugins\org.eclipse.jdt.core
