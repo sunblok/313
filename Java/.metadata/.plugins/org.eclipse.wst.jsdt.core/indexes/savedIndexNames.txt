@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\Users\Sunblok\Documents\CS 313 Web Dev II\313\Java\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3417401038.index
+1965890315.index
+3120562432.index
+3263404496.index
+1887457560.index
