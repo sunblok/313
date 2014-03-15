@@ -1,0 +1,14 @@
+package scripture;
+
+public class Scripture
+{
+   private String book;
+   private int chapter;
+   private int verse;
+
+   public Scripture()
+   {
+      
+      
+   }
+}

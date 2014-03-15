@@ -1,0 +1,23 @@
+package scripture;
+
+import java.util.List;
+
+public class ScriptureDataHandler
+{
+   
+   
+   ScriptureDataHandler()
+   {
+      
+   }
+   List<Scripture> getScriptures()
+   {
+      List <Scripture> scriptures = new Scripture();
+      scriptures.add(new Scripture ("Proverbs", 3,5));
+      scriptures.add(new Scripture ("Amos", 3,7));
+      scriptures.add(new Scripture ("John", 7,17));
+      scriptures.add(new Scripture ("1 Nephi", 3,7));
+      
+      return scripts;
+   }
+}
