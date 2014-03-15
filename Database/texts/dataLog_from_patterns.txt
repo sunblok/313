@@ -7,3 +7,34 @@ INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (6, 6
 INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (12, 6);
 INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (16, 6);
 INSERT INTO owner_Pattern( owner_Pattern_owner, owner_Pattern_pattern) VALUES (1, 6);
+22:25:14;;March-4-2014 () 0 
+INSERT INTO pattern( pattern_name, pattern_number, pattern_picture, pattern_publisher, pattern_date_created) VALUES ('test2', 'abcabc', 'Database/Pictures/B3906.jpg', 6,UTC_DATE());
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (26, 7);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (1, 7);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (2, 7);
+INSERT INTO owner_Pattern( owner_Pattern_owner, owner_Pattern_pattern) VALUES (1, 7);
+0:8:13;;March-7-2014 () 0 
+INSERT INTO pattern( pattern_name, pattern_number, pattern_picture, pattern_publisher, pattern_date_created) VALUES ('Stuff', '3940382', 'Database/Pictures/Screen Shot 2014-02-25 at 10.27.28 AM.jpg', 2,UTC_DATE());
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (12, 8);
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (7, 8);
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (6, 8);
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (1, 8);
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (25, 8);
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (13, 8);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (7, 8);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (8, 8);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (11, 8);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (13, 8);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (14, 8);
+INSERT INTO owner_Pattern( owner_Pattern_owner, owner_Pattern_pattern) VALUES (1, 8);
+0:12:51;;March-7-2014 () 0 
+INSERT INTO pattern( pattern_name, pattern_number, pattern_picture, pattern_publisher, pattern_date_created) VALUES ('Neat Pattern', 'sldkjf', 'Database/Pictures/Screen Shot 2014-03-06 at 8.39.58 AM.png', 6,UTC_DATE());
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (26, 9);
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (14, 9);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (1, 9);
+INSERT INTO owner_Pattern( owner_Pattern_owner, owner_Pattern_pattern) VALUES (2, 9);
+5:57:7;;March-7-2014 () 0 
+INSERT INTO pattern( pattern_name, pattern_number, pattern_picture, pattern_publisher, pattern_date_created) VALUES ('asdf3', '1q23asd', 'Database/Pictures/fishing for nerds.jpg', 9,UTC_DATE());
+INSERT INTO type_Pattern( type_Pattern_pType, type_Pattern_pattern) VALUES (24, 10);
+INSERT INTO size_Pattern( size_Pattern_pSize, size_Pattern_pattern) VALUES (10, 10);
+INSERT INTO owner_Pattern( owner_Pattern_owner, owner_Pattern_pattern) VALUES (1, 10);

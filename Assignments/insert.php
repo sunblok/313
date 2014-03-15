@@ -67,7 +67,7 @@
             echo "<form action='uploadPic.php' method='post' id = 'submit'><table border = '1' ><tr><th>Owner</th><th>Pattern</th><th>Publisher</th><th>Type</th><th>Size</th>";
             echo"</tr><tr><td>";
             //Owner
-            
+            echo "<input type='radio' name='info' value='1' class = 'hidden' checked><br/>";
             $owner = $mysqli->query("SELECT * FROM owner");
             while ($row = $owner->fetch_assoc())
             {

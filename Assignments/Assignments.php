@@ -23,6 +23,12 @@
                <tr>
                   <th><a href="/Assignments/Signin.php">Assignment 3: Insert into Database</a></th>
                </tr>
+               <tr>
+                  <th><a href="http://54.208.152.88:8080/helloWorld/HelloServlet">Assignment 4: Hello World Servlet</a></th>
+               </tr>
+               <tr>
+                  <th><a href="http://54.208.152.88:8080/helloWorld/HelloServlet">Assignment 4: Hello World Servlet</a></th>
+               </tr>
             </table>
          <hr/>
       </body>

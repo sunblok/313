@@ -1,18 +1,23 @@
 <?php
    session_start();
-   require_once('../Database/pass/pass.php');        
-   $_SESSION["owner"] = $_POST["owner"];
-   $_SESSION["name"] = $_POST["name"];
-   $_SESSION["number"] = $_POST["number"];
-   $_SESSION["publisher"] = $_POST["publisher"];
-   $_SESSION["type"] = $_POST["type"];
-   $_SESSION["size"] = $_POST["size"];
-   
+   require_once('../Database/pass/pass.php');       
+   //echo "THis is it!";
+   //echo $_POST["info"] . $_POST["owner"];
+   if ($_POST["info"])
+   {
+      $_SESSION["owner"] = $_POST["owner"];
+      $_SESSION["name"] = $_POST["name"];
+      $_SESSION["number"] = $_POST["number"];
+      $_SESSION["publisher"] = $_POST["publisher"];
+      $_SESSION["type"] = $_POST["type"];
+      $_SESSION["size"] = $_POST["size"];
+      echo "I DID IT!!!!";
+   }
    //echo $inhash . "><" . $goodPass;
    if($_SESSION["Signedin"] != "TRUE")
    {
-      //header("Location: Signin.php");
-      //exit;
+      header("Location: Signin.php");
+      exit;
    }
 ?>
 <?xml version = "1.0" encoding "utf-8"?>
