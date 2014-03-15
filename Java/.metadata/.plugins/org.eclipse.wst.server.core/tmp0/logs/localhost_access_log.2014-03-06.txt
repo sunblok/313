@@ -1,0 +1,15 @@
+127.0.0.1 - - [06/Mar/2014:10:10:18 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:10:29 -0700] "GET /ScriptureApp/Scripture.jsp HTTP/1.1" 200 406
+127.0.0.1 - - [06/Mar/2014:10:20:51 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:20:53 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 200 400
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:22:58 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 200 422
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:27:38 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 200 422
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:27:45 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 200 446
+127.0.0.1 - - [06/Mar/2014:10:44:10 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:44:14 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 200 342
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:44:49 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 200 485
+127.0.0.1 - - [06/Mar/2014:10:54:42 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:54:45 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 500 3889
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:10:55:22 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 200 454
+127.0.0.1 - - [06/Mar/2014:11:05:57 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [06/Mar/2014:11:05:58 -0700] "GET /ScriptureApp/ScriptureList HTTP/1.1" 200 454

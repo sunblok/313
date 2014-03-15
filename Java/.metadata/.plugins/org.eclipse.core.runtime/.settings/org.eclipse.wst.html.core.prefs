@@ -1,0 +1,5 @@
+alignEndBracket=true
+clearAllBlankLines=true
+eclipse.preferences.version=1
+indentationSize=3
+inlineElements=sub,img,td,sup,br,th,title,strike,basefont,b,acronym,font,select,a,abbr,label,i,cite,li,u,input,s,strong,q,em,big,small,span

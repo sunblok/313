@@ -1,0 +1,11 @@
+package scripture;
+
+import java.util.List;
+
+public class ScriptureDataHandler
+{
+   List<Scripture> getScriptures()
+   {
+      
+   }
+}
