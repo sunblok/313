@@ -1,0 +1,646 @@
+Database changed
+Query OK, 0 rows affected (0.02 sec)
+
++------------+
+| Drop Table |
++------------+
+| ingredient |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.02 sec)
+
++--------------+
+| Create Table |
++--------------+
+| ingredient   |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.14 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Drop Table  |
++-------------+
+| recipe_list |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe_list  |
++--------------+
+1 row in set (0.00 sec)
+
+ERROR 1072 (42000): Key column 'rl_ingredient' doesn't exist in table
++-------+------+---------------------------------------------------+
+| Level | Code | Message                                           |
++-------+------+---------------------------------------------------+
+| Error | 1072 | Key column 'rl_ingredient' doesn't exist in table |
++-------+------+---------------------------------------------------+
+1 row in set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| recipe     |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe       |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++----------------------+
+| Tables_in_BORecipies |
++----------------------+
+| ingredient           |
+| recipe               |
++----------------------+
+2 rows in set (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| ingredient |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| ingredient   |
++--------------+
+1 row in set (0.00 sec)
+
+ERROR 1050 (42S01): Table 'ingredient' already exists
++-------+------+-----------------------------------+
+| Level | Code | Message                           |
++-------+------+-----------------------------------+
+| Error | 1050 | Table 'ingredient' already exists |
++-------+------+-----------------------------------+
+1 row in set (0.00 sec)
+
++-------------+
+| Drop Table  |
++-------------+
+| recipe_list |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe_list  |
++--------------+
+1 row in set (0.00 sec)
+
+ERROR 1072 (42000): Key column 'rl_ingredient' doesn't exist in table
++-------+------+---------------------------------------------------+
+| Level | Code | Message                                           |
++-------+------+---------------------------------------------------+
+| Error | 1072 | Key column 'rl_ingredient' doesn't exist in table |
++-------+------+---------------------------------------------------+
+1 row in set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| recipe     |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe       |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++----------------------+
+| Tables_in_BORecipies |
++----------------------+
+| ingredient           |
+| recipe               |
++----------------------+
+2 rows in set (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| ingredient |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| ingredient   |
++--------------+
+1 row in set (0.01 sec)
+
+ERROR 1050 (42S01): Table 'ingredient' already exists
++-------+------+-----------------------------------+
+| Level | Code | Message                           |
++-------+------+-----------------------------------+
+| Error | 1050 | Table 'ingredient' already exists |
++-------+------+-----------------------------------+
+1 row in set (0.00 sec)
+
++-------------+
+| Drop Table  |
++-------------+
+| recipe_list |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe_list  |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| recipe     |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe       |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++----------------------+
+| Tables_in_BORecipies |
++----------------------+
+| ingredient           |
+| recipe               |
+| recipe_list          |
++----------------------+
+3 rows in set (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| ingredient |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| ingredient   |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Drop Table  |
++-------------+
+| recipe_list |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe_list  |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| recipe     |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe       |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++----------------------+
+| Tables_in_BORecipies |
++----------------------+
+| ingredient           |
+| recipe               |
+| recipe_list          |
++----------------------+
+3 rows in set (0.00 sec)
+
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| ingredient |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| ingredient   |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Drop Table  |
++-------------+
+| recipe_list |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe_list  |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| recipe     |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe       |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++----------------------+
+| Tables_in_BORecipies |
++----------------------+
+| ingredient           |
+| recipe               |
+| recipe_list          |
++----------------------+
+3 rows in set (0.00 sec)
+
+Database changed
++-------------+
+| Insert Into |
++-------------+
+| ingredient  |
++-------------+
+1 row in set (0.00 sec)
+
+ERROR 1062 (23000): Duplicate entry 'Beans' for key 'ing_name'
++-------+------+--------------------------------------------+
+| Level | Code | Message                                    |
++-------+------+--------------------------------------------+
+| Error | 1062 | Duplicate entry 'Beans' for key 'ing_name' |
++-------+------+--------------------------------------------+
+1 row in set (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| ingredient |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
++--------------+
+| Create Table |
++--------------+
+| ingredient   |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++-------------+
+| Drop Table  |
++-------------+
+| recipe_list |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe_list  |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Empty set (0.00 sec)
+
++------------+
+| Drop Table |
++------------+
+| recipe     |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
++--------------+
+| Create Table |
++--------------+
+| recipe       |
++--------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Empty set (0.00 sec)
+
++------------------------+
+| SET                    |
++------------------------+
+| Foreign_KEY_CHECKS = 1 |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| Select      |
++-------------+
+| Show Tables |
++-------------+
+1 row in set (0.00 sec)
+
++----------------------+
+| Tables_in_BORecipies |
++----------------------+
+| ingredient           |
+| recipe               |
+| recipe_list          |
++----------------------+
+3 rows in set (0.00 sec)
+
+Database changed
++-------------+
+| Insert Into |
++-------------+
+| ingredient  |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 441 rows affected (0.03 sec)
+Records: 441  Duplicates: 0  Warnings: 0
+
+Empty set (0.00 sec)
+
++--------+
+| Commit |
++--------+
+| Commit |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
