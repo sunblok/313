@@ -39,7 +39,9 @@ CREATE TABLE recipe
 ( recipe_id           INT UNSIGNED PRIMARY KEY AUTO_INCREMENT
 , recipe_name         CHAR(70)     NOT NULL
 , recipe_BOID         INT UNSIGNED NOT NULL
-, recipe_list_list         INT UNSIGNED NOT NULL
+, recipe_list_list    INT UNSIGNED NOT NULL
+, recipe_ingredeient  BLOB NOT NULL
+, recipe_instructions BLOB NOT NULL
 , KEY recipe_fk1 (recipe_list_list)
 , CONSTRAINT recipe_fk1 FOREIGN KEY (recipe_list_list) REFERENCES recipe_list (r_l_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

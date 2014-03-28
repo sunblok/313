@@ -1,4 +1,4 @@
-TEE texts/create_BO.txt
+TEE texts/seed_BO.txt
 
 Use BORecipies;
 
